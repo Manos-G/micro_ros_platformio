@@ -40,6 +40,8 @@ Supported boards are:
 | `esp32dev`                                   | `espressif32` | `arduino`   | `serial` <br/> `wifi`            | `colcon.meta`            |
 | `nanorp2040connect`                          | `raspberrypi` | `arduino`   | `serial` <br/> `wifi_nina`       | `colcon_verylowmem.meta` |
 | `pico`                                       | `raspberrypi` | `arduino`   | `serial`                         | `colcon.meta`|
+| `pico w`                                       | `raspberrypi` | `arduino`   | `serial` <br/> `wifi_pico`      | `colcon.meta`|
+
 
 The community is encouraged to open pull request with custom use cases.
 
@@ -109,8 +111,7 @@ The transport can be configured with the `board_microros_transport = <transport>
     set_microros_serial_transports(Serial);
     ```
 
-  - `wifi`
-  - `wifi_nina`
+  - `wifi` `wifi_nina` `wifi_pico`
 
     ```c
     IPAddress agent_ip(192, 168, 1, 113);
